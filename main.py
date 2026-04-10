@@ -9,14 +9,22 @@ while True:
     print("4 - divisao")
     print("5 - sair")
 
-    opcoes = int(input("Digite uma opção do menu: "))
+    try:
+        opcoes = int(input("Digite uma opção do menu: "))
+    except ValueError:
+        print("Erro, opção invalida!!")
+        continue
 
     if opcoes == 5:
         print("Saindo da calculadora.....")
         break
 
-    numero1 = int(input("Digite o primeiro número: "))
-    numero2 = int(input("Digite o segundo número: "))
+    try:
+        numero1 = int(input("Digite o primeiro número: "))
+        numero2 = int(input("Digite o segundo número: "))
+    except ValueError:
+        print("Erro!!, digite números válidos!")
+        continue
 
     if opcoes == 1:
         resultado = numero1 + numero2
