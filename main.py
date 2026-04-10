@@ -1,4 +1,15 @@
 print("Calculadora")
+print("Digite um número válido dentre as opções de menu: ")
+
+print("--- Menu da Calculadora ---")
+print("1 - Soma")
+print("2 - subtracao")
+print("3 - multiplicacao")
+print("4 - divisao")
+
+opcoes = int(input("Digite uma opção do menu: "))
+
+
 numero1 = int(input("Digite o primeiro número: "))
 numero2 = int(input("Digite o segundo número: "))
 
