@@ -39,8 +39,11 @@ while True:
         print("A multiplicação é: {}".format(resultado))
 
     elif opcoes == 4:
-        resultado = numero1 / numero2
-        print("A divisão é: {}".format(resultado))
+        if numero2 == 0:
+            print("Erro, não é possivel dividir por Zero!!")
+        else:
+            resultado = numero1 / numero2
+            print("A divisão é: {}".format(resultado))
 
     else:
         print("Opção invalida!")
