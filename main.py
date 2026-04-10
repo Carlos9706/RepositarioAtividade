@@ -9,16 +9,24 @@ print("4 - divisao")
 
 opcoes = int(input("Digite uma opção do menu: "))
 
-
 numero1 = int(input("Digite o primeiro número: "))
 numero2 = int(input("Digite o segundo número: "))
 
-soma = numero1 + numero2
-subtracao = numero1 - numero2
-multiplicacao = numero1 * numero2
-divisao = numero1 / numero2
+if opcoes == 1:
+    resultado = numero1 + numero2
+    print("A soma é: {}".format(resultado))
 
-print("A soma é: {}".format(soma))
-print("A subtração é: {}".format(subtracao))
-print("A multiplicação é: {}".format(multiplicacao))
-print("A divisão é: {}".format(divisao))
+elif opcoes == 2:
+    resultado = numero1 - numero2
+    print("A subtração é: {}".format(resultado))
+
+elif opcoes == 3:
+    resultado = numero1 * numero2
+    print("A multiplicação é: {}".format(resultado))
+
+elif opcoes == 4:
+    resultado = numero1 / numero2
+    print("A divisão é: {}".format(resultado))
+
+else:
+    print("Opção invalida!")
