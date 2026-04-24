@@ -1,0 +1,17 @@
+name: Discord
+
+on:
+  schedule:
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Discord message
+        uses: tsickert/discord-webhook@v7.0.0
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK }}
+          content: "Teste do discord"
