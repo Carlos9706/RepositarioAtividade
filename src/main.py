@@ -43,22 +43,23 @@ def executar_calculadora():
             continue
 
         if opcoes == 1:
-            print("A soma é: " + soma(numero1, numero2))
+            print("A soma é:", soma(numero1, numero2))
 
         elif opcoes == 2:
-            print("A subtração é: " + subtracao(numero1, numero2))
+            print("A subtração é:", subtracao(numero1, numero2))
 
         elif opcoes == 3:
-            print("A multiplicação é: " + multiplicacao(numero1, numero2))
+            print("A multiplicação é:", multiplicacao(numero1, numero2))
 
         elif opcoes == 4:
             try:
-                 print("A divisão é: " + divisao(numero1, numero2))
+                print("A divisão é:", divisao(numero1, numero2))
             except ValueError as e:
                 print(e)
+
         else:
             print("Opção invalida!")
 
+
 if __name__ == "__main__":
     executar_calculadora()
-
